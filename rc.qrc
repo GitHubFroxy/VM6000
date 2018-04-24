@@ -28,5 +28,9 @@
         <file>image/close.png</file>
         <file>image/nvr.png</file>
         <file>image/excel.png</file>
+        <file>image/black.css</file>
+        <file>image/blue.css</file>
+        <file>image/gray.css</file>
+        <file>image/navy.css</file>
     </qresource>
 </RCC>
