@@ -57,6 +57,13 @@ void frmIPC::InitForm()
         }
     }
 
+    QStringList tempNVRType = myApp::NVRType.split(";");
+    foreach (QString nvrType, tempNVRType) {
+        if (nvrType.trimmed() != "") {
+            ui->cboxNVRName->addItem(nvrType);
+        }
+    }
+
     //最后一列自动填充
     ui->tableMain->horizontalHeader()->setStretchLastSection(true);
     //奇数偶数行不同背景色
