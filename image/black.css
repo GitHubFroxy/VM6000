@@ -135,7 +135,8 @@ QComboBox::down-arrow,QDateEdit::down-arrow {
 }
 
 QMenu {
-	background-color:#F0F0F0;
+        color:#000000;
+        background-color:#F0F0F0;
 	margin: 2px;
 }
 

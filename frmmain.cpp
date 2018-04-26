@@ -28,7 +28,7 @@ frmMain::~frmMain()
 
 void frmMain::InitStyle()
 {
-	this->setStyleSheet("QGroupBox#gboxMain{border-width:0px;}");
+    this->setStyleSheet("QGroupBox#gboxMain{border-width:0px;}");
     this->setProperty("Form", true);
     //设置窗体标题栏隐藏--Qt::WindowStaysOnTopHint |
     this->setWindowFlags(Qt::FramelessWindowHint |

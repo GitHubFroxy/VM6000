@@ -67,31 +67,35 @@ void frmNVR::InitForm()
     queryModule = new QSqlQueryModel(this);
     LoadNVRInfo();
 
-    QString columnNames[8]; //列名数组
-    int columnWidths[8];    //列宽数组
+//    QString columnNames[8]; //列名数组
+//    int columnWidths[8];    //列宽数组
 
-    //初始化表格列名和列宽
-    columnNames[0] = "编号";
-    columnNames[1] = "名称";
-    columnNames[2] = "地址";
-    columnNames[3] = "IP地址";
-    columnNames[4] = "类型";
-    columnNames[5] = "用户名";
-    columnNames[6] = "密码";
-    columnNames[7] = "状态";
+//    //初始化表格列名和列宽
+//    columnNames[0] = "编号";
+//    columnNames[1] = "名称";
+//    columnNames[2] = "地址";
+//    columnNames[3] = "IP地址";
+//    columnNames[4] = "类型";
+//    columnNames[5] = "用户名";
+//    columnNames[6] = "密码";
+//    columnNames[7] = "状态";
 
     int width = myApp::DeskWidth - 246;
-    columnWidths[0] = width * 0.08;
-    columnWidths[1] = width * 0.16;
-    columnWidths[2] = width * 0.20;
-    columnWidths[3] = width * 0.12;
-    columnWidths[4] = width * 0.08;
-    columnWidths[5] = width * 0.12;
-    columnWidths[6] = width * 0.12;
-    columnWidths[7] = width * 0.08;
+//    columnWidths[0] = width * 0.08;
+//    columnWidths[1] = width * 0.16;
+//    columnWidths[2] = width * 0.20;
+//    columnWidths[3] = width * 0.12;
+//    columnWidths[4] = width * 0.08;
+//    columnWidths[5] = width * 0.12;
+//    columnWidths[6] = width * 0.12;
+//    columnWidths[7] = width * 0.08;
 
+    QList<QString> columnNames;
+    QList<int> columnWidths;
+    columnNames << "编号"<<"名称"<<"地址"<<"IP地址"<<"类型"<<"用户名"<< "密码"<<"状态";
+    columnWidths<< width * 0.08<<width * 0.16<<width * 0.20<<width * 0.12<<width * 0.08<<width * 0.12<<width * 0.12<<width * 0.08;
     //依次设置列标题列宽
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < columnNames.size(); i++) {
         queryModule->setHeaderData(i, Qt::Horizontal, columnNames[i]);
         ui->tableMain->setColumnWidth(i, columnWidths[i]);
     }
