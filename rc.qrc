@@ -32,5 +32,10 @@
         <file>image/blue.css</file>
         <file>image/gray.css</file>
         <file>image/navy.css</file>
+        <file>image/brown.css</file>
+        <file>image/darkgray.css</file>
+        <file>image/dev.css</file>
+        <file>image/lightgray.css</file>
+        <file>image/silvery.css</file>
     </qresource>
 </RCC>
